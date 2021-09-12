@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>jquerymobile document</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -52,6 +52,13 @@
 </head>
 
 <body>
+
+    <div data-role="header" style="overflow:hidden;">
+        <h1>Moonlight歌唱室</h1>
+        <a href="" data-icon="edit" class="ui-btn-left">每日簽到</a>
+        <a href="" data-icon="gear" class="ui-btn-right">通知</a>
+    </div>
+
     <div class="ui-grid-b ui-responsive">
             <div class="ui-block-a"><a href="#" class="ui-btn ui-shadow ui-corner-all">歌房</a></div>
             <div class="ui-block-b"><a href="#" class="ui-btn ui-shadow ui-corner-all">猜詞</a></div>
@@ -60,8 +67,8 @@
 
     <div class="ui-grid-b ui-responsive">
             <div class="ui-block-a"><a href="#"
-                class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-arrow-l">我的歌房</a></div>
-            <div class="ui-block-b"><input type="button" data-icon="plus" value="常去唱歌房"></div>
+                class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-grid">我的歌房</a></div>
+            <div class="ui-block-b"><input type="button" data-icon="home" value="常去唱歌房"></div>
     </div>
 
     <div class="ui-corner-all custom-corners">
@@ -92,10 +99,12 @@
               </div>
             </div>
 
-            <div data-role="footer">
+            <div data-role="footer" style="overflow:hidden;">
                     <h2>Footer</h2>
-                    <a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">離開</a>
-                    <a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-right ui-btn-icon-right ui-icon-carat-r">加入唱歌房</a>
+                    <a href="#" data-icon="arrow-l" class="ui-btn-left">離開</a>
+                    <a href="#" data-icon="arrow-r" class="ui-btn-inline">加入唱歌房</a>
+                    <a href="#" data-icon="arrow-r" class="ui-btn-inline">聊天</a>
+                    <a href="#" data-icon="arrow-r" class="ui-btn-right">個人檔案</a>
                 </div>
 </body>
 
